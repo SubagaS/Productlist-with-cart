@@ -1,5 +1,7 @@
 import data from '../data.json';
 import Menu from './Components/Menu/Menu';
+import CartContextProvider from './Context/CartContextProvider';
+import Cart from './Components/Cart/Cart';
 
 function App() {
   let imageSize = 'mobile';
@@ -17,7 +19,10 @@ function App() {
 
   return (
     <>
-      <Menu allData={newData}/>
+      <CartContextProvider>
+        <Menu allData={newData} />
+        <Cart />
+      </CartContextProvider>
     </>
   );
 }

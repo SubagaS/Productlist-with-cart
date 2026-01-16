@@ -1,7 +1,10 @@
 import styles from './styles.module.css';
 import FoodCard from '../FoodCard/FoodCard';
 
+
 function Menu({ allData }) {
+//   const { cart } = useCartContext();
+//   console.log(cart);
   return (
     <>
       <section className={styles.menuContainer}>
