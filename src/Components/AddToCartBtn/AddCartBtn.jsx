@@ -9,10 +9,10 @@ function AddCartBtn({ item }) {
   return (
     <>
       <button
-        className={styles.cartBtn}
+        className={styles.addToCartBtn}
         onClick={() => addItemToCart({ item })}
       >
-        <img src={cartIcon} alt="cart-icon" />
+        <img src={cartIcon} alt="cart-icon" className={styles.cartIcon} />
         <p>Add to cart</p>
       </button>
     </>

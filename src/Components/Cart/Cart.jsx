@@ -8,7 +8,7 @@ function Cart() {
       <h1>You Cart</h1>
       <ul>
         {cart.map((item) => (
-          <li>{item.name}</li>
+          <li key={item.name}>{item.name}</li>
         ))}
       </ul>
     </>

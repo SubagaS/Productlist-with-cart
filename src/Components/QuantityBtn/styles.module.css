@@ -1,39 +1,3 @@
-.cardContainer {
-  width: 20.4rem;
-  height: 19.9rem;
-  position: relative;
-}
-
-.imgFood {
-  width: 20.4rem;
-  height: 13.25rem;
-}
-
-
-
-.txtContainer {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.categoryTxt {
-  color: var(--rose500);
-  font-size: 0.875rem;
-  font-weight: 400;
-}
-.nameTxt {
-  color: var(--rose900);
-  font-size: 1rem;
-  font-weight: 600;
-}
-.priceTxt {
-  color: var(--red);
-  font-size: 1rem;
-  font-weight: 600;
-}
-
 .quantityBtn {
   position: absolute;
   left: 5.2rem;
