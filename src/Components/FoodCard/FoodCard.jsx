@@ -23,7 +23,7 @@ function FoodCard({ dessertItem }) {
         <div className={styles.txtContainer}>
           <p className={styles.categoryTxt}>{dessertItem.category}</p>
           <p className={styles.nameTxt}>{dessertItem.name}</p>
-          <p className={styles.priceTxt}>{dessertItem.price}</p>
+          <p className={styles.priceTxt}>&#36;{dessertItem.price}</p>
         </div>
       </div>
     </>
