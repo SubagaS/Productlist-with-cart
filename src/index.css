@@ -33,11 +33,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media only screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
 }
 
 body {
   display: flex;
-  
+  position: relative;
   padding: 1.5rem;
   background-color: var(--rose50);
 }

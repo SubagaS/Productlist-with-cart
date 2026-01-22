@@ -1,0 +1,133 @@
+.popUpContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 25%);
+  display: flex;
+  align-items: flex-end;
+  @media only screen and (min-width: 800px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.popUp {
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 0.75rem 0.75rem 0 0;
+  @media only screen and (min-width: 800px) {
+    width: 43rem;
+    border-radius: 0.75rem;
+  }
+}
+.tickMark {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.orderConfirmTxt {
+  font-size: 2.5rem;
+  color: var(--rose900);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.enjoyFood {
+  font-size: 1rem;
+  color: var(--rose500);
+  margin-bottom: 2rem;
+}
+
+.itemConfirmContainer {
+  background-color: var(--rose50);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+.itemConfirm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.imgDataContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.itemImg {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+.confirmItemData {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirmItemName {
+  font-size: 0.875rem;
+  color: var(--rose900);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.confirmItemQty {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--red);
+  span {
+    margin-left: 0.5rem;
+    color: var(--rose500);
+    font-weight: 400;
+  }
+}
+
+.itemConfirmTotalPrice {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--rose900);
+}
+
+.divider {
+  width: 100%;
+  border: solid 1px var(--rose100);
+  margin-bottom: 1rem;
+}
+
+.orderTotalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--rose900);
+  span {
+    font-size: 1.5rem;
+    color: var(--rose900);
+    font-weight: 700;
+  }
+}
+
+.newOrderBtn {
+  width: 100%;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: var(--red);
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  font-family: inherit;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+  }
+}

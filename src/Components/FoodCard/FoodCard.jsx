@@ -11,15 +11,22 @@ function FoodCard({ dessertItem }) {
   return (
     <>
       <div className={styles.cardContainer}>
-        <img src={dessertItem.image} alt="" className={styles.imgFood} />
-        {!selectItem ? (
-          <AddCartBtn item={dessertItem} />
-        ) : (
-          <QuantityBtn
-            quantity={selectItem.quantity}
-            productName={dessertItem.name}
+        <div className={styles.btnImageContainer}>
+          <img
+            src={dessertItem.image}
+            alt="dessert-image"
+            className={styles.imgFood}
           />
-        )}
+          {!selectItem ? (
+            <AddCartBtn item={dessertItem} />
+          ) : (
+            <QuantityBtn
+              quantity={selectItem.quantity}
+              productName={dessertItem.name}
+            />
+          )}
+        </div>
+
         <div className={styles.txtContainer}>
           <p className={styles.categoryTxt}>{dessertItem.category}</p>
           <p className={styles.nameTxt}>{dessertItem.name}</p>

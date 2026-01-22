@@ -21,7 +21,7 @@ function App() {
     <>
       <CartContextProvider>
         <Menu allData={newData} />
-        <Cart  />
+        <Cart />
       </CartContextProvider>
     </>
   );

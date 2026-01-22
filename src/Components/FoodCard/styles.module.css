@@ -1,18 +1,37 @@
 .cardContainer {
   width: 20.4rem;
   height: 19.9rem;
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 500px) {
+    width: 13.31rem;
+    height: 19.9rem;
+  }
+}
+
+.btnImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgFood {
   width: 20.4rem;
   height: 13.25rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  @media only screen and (min-width: 500px) {
+    width: 13.31rem;
+    height: 13.25rem;
+    object-fit: contain;
+  }
 }
 
-
-
 .txtContainer {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -32,38 +51,4 @@
   color: var(--red);
   font-size: 1rem;
   font-weight: 600;
-}
-
-.quantityBtn {
-  position: absolute;
-  left: 5.2rem;
-  top: 11.8rem;
-  width: 10rem;
-  height: 2.75rem;
-  border-radius: 62rem;
-  border: 1px solid var(--rose400);
-  background-color: var(--red);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.minusIconBtn,
-.plusIconBtn {
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 100%;
-  width: 1.25rem;
-  height: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.quantity {
-  color: white;
 }

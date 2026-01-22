@@ -1,9 +1,7 @@
 .quantityBtn {
-  position: absolute;
-  left: 5.2rem;
-  top: 11.8rem;
   width: 10rem;
   height: 2.75rem;
+  margin-top: -1.375rem;
   border-radius: 62rem;
   border: 1px solid var(--rose400);
   background-color: var(--red);
