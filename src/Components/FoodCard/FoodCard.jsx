@@ -6,7 +6,7 @@ import QuantityBtn from '../QuantityBtn/QuantityBtn';
 function FoodCard({ dessertItem }) {
   const { cart } = useCartContext();
   const selectItem = cart.find((item) => item.name === dessertItem.name);
-  // console.log(selectItem);
+  
 
   return (
     <>
